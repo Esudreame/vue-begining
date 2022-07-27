@@ -1,16 +1,15 @@
 <template>
+<div>
 
+</div>
 </template>
 
 <script>
-
-
 export default {
-  name: 'App',
-
+  name: "SideBar"
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>
