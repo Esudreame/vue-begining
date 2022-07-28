@@ -1,6 +1,6 @@
 <template>
   <div v-for="item in items" :key="item.id">
-    <side-bar-item :id="item.id ">{{item.value}}</side-bar-item>
+    <side-bar-item :id="item.id" :route="item.route">{{item.value}}</side-bar-item>
   </div>
 </template>
 

@@ -1,12 +1,22 @@
 <template>
   <div>
-    <p>Users</p>
+
   </div>
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
-  name: "userZone"
+  name: "userZone",
+  data() {
+    return {
+      userInfo: ''
+    }
+  },
+  mounted() {
+    axios.get('https://jsonplaceholder.typicode.com/users').then(response => (this.userInfo = response))
+  }
 }
 </script>
 

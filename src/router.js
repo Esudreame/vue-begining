@@ -1,5 +1,7 @@
 import {createRouter, createWebHistory} from 'vue-router'
 import userZone from "@/components/content/users/userZone";
+import groupsZone from "@/components/content/groups/groupsZone";
+import scheduleZone from "@/components/content/schedules/scheduleZone";
 
 
 const routes = [
@@ -8,12 +10,12 @@ const routes = [
         component: userZone
     },
     {
-        path: '/schedule',
-        component: userZone
+        path: '/schedules',
+        component: scheduleZone
     },
     {
         path: '/groups',
-        component: userZone
+        component: groupsZone
     }
 ]
 

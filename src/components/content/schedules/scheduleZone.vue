@@ -1,12 +1,12 @@
 <template>
   <div>
-    <p>Groups</p>
+    <p>Schedules</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: "groupsZone"
+  name: "schedulesZone"
 }
 </script>
 
