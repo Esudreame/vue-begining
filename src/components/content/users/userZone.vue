@@ -1,10 +1,7 @@
 <template>
   <div>
     <user-modal v-model:show="dialogVisible">
-      <p>USER FORM</p>
-      <p>USER FORM</p>
-      <p>USER FORM</p>
-      <p>USER FORM</p>
+        <user-form></user-form>
     </user-modal>
   </div>
 
@@ -19,10 +16,11 @@
 <script>
 import axios from "axios";
 import UserModal from "@/components/content/UI/MyModal";
+import UserForm from "@/components/content/users/UserForm";
 
 export default {
   name: "userZone",
-  components: {UserModal},
+  components: {UserForm, UserModal},
   data() {
     return {
       usersInfo: {
